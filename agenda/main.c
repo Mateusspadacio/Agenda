@@ -5,7 +5,7 @@
  
 int main(void)
 {
-	
+	//Person name
 	struct nomeS{
 		char nome[50];
 	};
@@ -14,6 +14,7 @@ int main(void)
     int i, num_componentes = 0, option, j = 0, k =0;
     struct nomeS *nome;
 	
+    //Allocating memory	
     nome = (struct nomeS *)malloc(sizeof(struct nomeS)*num_componentes);
     numero = (int *) malloc(sizeof(int) * num_componentes);
     num = (int *) malloc(num_componentes * sizeof(int));
@@ -42,15 +43,15 @@ int main(void)
 	     		printf("\nDigite o numero para remover: ");
 	     		scanf("%d", &numero);
 	     		for(i = 0; i < num_componentes; i++){
-					if(num[i] == numero){
-						num[i] = NULL;
-						*nome[i].nome = NULL;
+					if(num[i] == numero){       	//If It finds the number
+						num[i] = NULL;		//Deallocate memory
+						*nome[i].nome = NULL;	//Deallocate memory
 					}
 				}
 				numero = NULL;
 				break;
 			case 3:
-				printf("*** Lista de contatos ***\n"); 
+				printf("*** Lista de contatos ***\n"); //Show contacts
 				for(i = 0; i < num_componentes; i++){
 					if(num[i] != 0){
 						printf("%d ----- %s \n", num[i], nome[i].nome);
