@@ -19,7 +19,7 @@ int main(void)
     num = (int *) malloc(num_componentes * sizeof(int));
     
     while(1){
-    	printf("\nAgenda Telefônica\n");
+    	printf("\nAgenda Telefonica\n");
     	printf("1 - Adicionar\n");
     	printf("2 - Remover\n");
     	printf("3 - Listar\n");
