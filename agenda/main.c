@@ -12,10 +12,10 @@ int main(void)
 	
     int *num, *numero; 
     int i, num_componentes = 0, option, j = 0, k =0;
-	struct nomeS *nome;
+    struct nomeS *nome;
 	
-	nome = (struct nomeS *)malloc(sizeof(struct nomeS)*num_componentes);
-	numero = (int *) malloc(sizeof(int) * num_componentes);
+    nome = (struct nomeS *)malloc(sizeof(struct nomeS)*num_componentes);
+    numero = (int *) malloc(sizeof(int) * num_componentes);
     num = (int *) malloc(num_componentes * sizeof(int));
     
     while(1){
